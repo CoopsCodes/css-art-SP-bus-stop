@@ -1,0 +1,35 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	/* background: var(--bg); */
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+:root {
+	--bg: pink;
+	--size: 90;
+	--unit: calc((var(--size) / 2160) * 1vmin);
+}
+
+img {
+	/* height: calc((var(--size)) * 1vmin); */
+	opacity: 0.5;
+}
+
+img,
+.scene {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: calc(2160 * var(--unit));
+	width: calc(3840 * var(--unit));
+}
+
+.scene {
+	background: hsla(0, 100%, 50%, 0.2);
+}
