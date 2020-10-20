@@ -58,10 +58,17 @@ img,
 	width: calc(3840 * var(--unit));
 }
 
-.scene {
-	/* background: var(--mountain-green); */
+/* Green background, the most root div thats 100% of the image size */
+.background-mountains {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
 }
 
+/* Sky container box */
 .sky {
 	position: absolute;
 	height: 15%;
@@ -73,7 +80,6 @@ img,
 
 .sky__one {
 	background: var(--sky);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 208%;
 	width: 10%;
@@ -85,7 +91,6 @@ img,
 }
 
 .sky__two {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background: var(--sky);
 	position: absolute;
 	height: 139%;
@@ -96,7 +101,6 @@ img,
 }
 
 .sky__three {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background: var(--sky);
 	position: absolute;
 	height: 139%;
@@ -105,3 +109,113 @@ img,
 	left: 9%;
 	clip-path: polygon(100% 0%, 0% 0%, 44% 72%);
 }
+
+/* Snow caped mountain container */
+.mountain-snow {
+	position: absolute;
+	height: 14.5%;
+	width: 11.6%;
+	top: 8.3%;
+	left: 44.7%;
+}
+
+.mountain-snow__one {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 21%;
+	width: 165%;
+	top: 41%;
+	left: -31%;
+	border-radius: 100% 100%;
+	transform: rotate(-38deg);
+	clip-path: inset(0 49% 63% 17%);
+}
+
+.mountain-snow__two {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 197%;
+	width: 202%;
+	top: -93%;
+	left: -128%;
+	border-radius: 100% 100%;
+	clip-path: inset(69.2% 0% 2% 63.5%);
+}
+
+.mountain-snow__three {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 57.5%;
+	width: 51%;
+	top: 42.5%;
+	left: -1%;
+	clip-path: polygon(96% 0, 0 0, 0 101%);
+}
+
+.mountain-snow__four {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 13%;
+	width: 10%;
+	top: 0.5%;
+	left: 90%;
+	border-radius: 100% 70% 100% 100%;
+}
+
+.mountain-snow__five {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 32%;
+	width: 75%;
+	top: 9%;
+	left: 28%;
+	border-radius: 100% 100% 100% 100%;
+	clip-path: inset(50% 0% 0% 54%);
+	transform: rotate(-23deg);
+}
+
+.mountain-snow__six {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 25%;
+	left: 56%;
+	border-radius: 100% 0% 100% 0%;
+}
+.mountain-snow__seven {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 117%;
+	width: 10%;
+	top: -23%;
+	left: 56.3%;
+	border-radius: 100% 10% 100% 10%;
+	transform: rotate(49.5deg);
+}
+
+.mountain-snow__eight {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	top: 7%;
+	left: 50%;
+	clip-path: polygon(
+		88.45% -10.44%,
+		61.61% 46.88%,
+		17.61% 93.27%,
+		1.6% 74.36%
+	);
+}
+
+/* 
+background-color: hsla(0, 100%, 50%, 0.2);
+position: absolute;
+height: 10%;
+width: 10%;
+top: 0%;
+left: 0%; 
+clip-path: inset(0% 0% 0% 0%);
+transform: rotate(0deg);
+*/
