@@ -11,13 +11,41 @@ body {
 }
 :root {
 	--bg: pink;
-	--size: 90;
+	--size: 99;
 	--unit: calc((var(--size) / 2160) * 1vmin);
+
+	/* Background Colours */
+	--mountain-green: rgb(12, 110, 74);
+	--tree-green: rgb(35, 143, 96);
+	--pure-white: rgb(255, 255, 255);
+	--ground-snow: rgb(246, 250, 248);
+	--sky: rgb(143, 215, 248);
+	--sign-yellow: rgb(252, 223, 20);
+	--sign-black: rgb(37, 31, 33);
+	--sign-post: rgb(128, 53, 37);
+
+	/* Common Character Colours */
+	--shoes: rgb(35, 32, 32);
+	--red: rgb(255, 58, 69);
+	--orange: rgb(243, 113, 48);
+	--brown: rgb(128, 53, 37);
+
+	/* Stan */
+	--s-blue: rgb(81, 100, 170);
+	--s-brown: rgb(190, 110, 86);
+
+	/* Kyle */
+	--ky-green-1: rgb(112, 192, 109);
+	--ky-green-2: rgb(23, 154, 105);
+
+	/* Cartman */
+	--c-yellow: rgb(252, 223, 60);
+	--c-blue: rgb(95, 191, 211);
 }
 
 img {
-	/* height: calc((var(--size)) * 1vmin); */
-	opacity: 0.5;
+	height: calc((var(--size)) * 1vmin);
+	opacity: 0.7;
 }
 
 img,
@@ -31,5 +59,49 @@ img,
 }
 
 .scene {
-	background: hsla(0, 100%, 50%, 0.2);
+	/* background: var(--mountain-green); */
+}
+
+.sky {
+	position: absolute;
+	height: 15%;
+	width: 24.5%;
+	top: 7.5%;
+	left: 51%;
+	transform: translate(-50%, -50%);
+}
+
+.sky__one {
+	background: var(--sky);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 208%;
+	width: 10%;
+	top: -69%;
+	left: 18%;
+	border-radius: 50% 50% 50% 50%;
+	transform: rotate(-52deg);
+	clip-path: inset(50% 0% 0% 0%);
+}
+
+.sky__two {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background: var(--sky);
+	position: absolute;
+	height: 139%;
+	width: 66%;
+	top: 0%;
+	left: 0%;
+	clip-path: polygon(54% 0%, 2% 0%, 31% 34%);
+}
+
+.sky__three {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background: var(--sky);
+	position: absolute;
+	height: 139%;
+	width: 91%;
+	top: 0%;
+	left: 9%;
+	clip-path: polygon(100% 0%, 0% 0%, 44% 72%);
 }
