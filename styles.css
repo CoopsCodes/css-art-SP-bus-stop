@@ -11,7 +11,7 @@ body {
 }
 :root {
 	--bg: pink;
-	--size: 99;
+	--size: 90;
 	--unit: calc((var(--size) / 2160) * 1vmin);
 
 	/* Background Colours */
@@ -83,7 +83,7 @@ img,
 	position: absolute;
 	height: 208%;
 	width: 10%;
-	top: -69%;
+	top: -70%;
 	left: 18%;
 	border-radius: 50% 50% 50% 50%;
 	transform: rotate(-52deg);
