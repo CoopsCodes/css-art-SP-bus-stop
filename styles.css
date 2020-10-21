@@ -228,7 +228,7 @@ img,
 	transform: translate(-50%, -50%);
 }
 
-/* Border of sign */
+/* Border of sign: one + two + three */
 .sign__one {
 	background-color: var(--sign-yellow);
 	position: absolute;
@@ -265,7 +265,6 @@ img,
 /* First character */
 /* Head */
 .sign__four {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background-color: var(--sign-black);
 	position: absolute;
 	height: 9%;
@@ -278,7 +277,6 @@ img,
 
 /* brief case */
 .sign__five {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background-color: var(--sign-black);
 	position: absolute;
 	height: 33%;
@@ -373,6 +371,75 @@ img,
 		35.83% 38.5%,
 		25.41% 22.46%
 	);
+}
+
+/* Left foot */
+.sign__twlve {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--sign-black);
+	position: absolute;
+	height: 4%;
+	width: 4%;
+	top: 74.3%;
+	left: 40.2%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+/* Left Knee */
+.sign__trten {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--sign-black);
+	position: absolute;
+	height: 4%;
+	width: 4%;
+	top: 61.5%;
+	left: 38.5%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+/* Left Leg clip-path */
+.sign__frten {
+	background-color: var(--sign-black);
+	position: absolute;
+	height: 49%;
+	width: 49%;
+	top: 40%;
+	left: 23%;
+	clip-path: polygon(
+		33.7% 29.68%,
+		41.58% 33.06%,
+		36% 43.65%,
+		39.07% 67.64%,
+		30.86% 71.45%,
+		27.8% 42.58%
+	);
+}
+
+.sign__sxten {
+	background-color: var(--sign-black);
+	position: absolute;
+	height: 12%;
+	width: 4%;
+	top: 51.7%;
+	left: 51.5%;
+	border-radius: 59% / 29%;
+	transform: rotate(57deg);
+}
+
+.sign__svten {
+	background-color: var(--sign-black);
+	position: absolute;
+	height: 4%;
+	width: 5%;
+	top: 56%;
+	left: 45.8%;
+	transform: rotate(52deg);
+}
+
+/* Right Leg  */
+.sign__egten {
 }
 
 /* 
