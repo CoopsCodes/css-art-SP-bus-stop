@@ -60,7 +60,7 @@ img,
 
 /* Green background, the most root div thats 100% of the image size */
 .background-mountains {
-	/* background-color: var(--mountain-green); */
+	background-color: var(--mountain-green);
 	position: absolute;
 	height: 100%;
 	width: 100%;
