@@ -826,6 +826,133 @@ img,
 	);
 }
 
+.tree__sxtn {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 10%;
+	width: 12%;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 79% 30% 19% 13% / 55% 25% 0% 0%;
+}
+
+.tree__svtn {
+	/* background-color: hsla(0, 100%, 50%, 0.11); */
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 10.5%;
+	width: 26.3%;
+	top: 29.3%;
+	left: 37.4%;
+	transform: rotate(-3deg);
+	border-radius: 66% 0% 54% 11% / 81% 25% 49% 10%;
+}
+
+.tree__eitn {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 12%;
+	width: 20%;
+	top: 23%;
+	left: 55.8%;
+	border-radius: 50%;
+	clip-path: inset(31% 54% 0% 0%);
+}
+
+.tree__nintn {
+	background-color: var(--pure-white);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 11%;
+	width: 8%;
+	top: 34%;
+	left: 45%;
+	border-radius: 50%;
+	transform: rotate(8deg);
+}
+
+.tree__twty {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 11%;
+	width: 4%;
+	top: 40%;
+	left: 47.1%;
+	border-radius: 50%;
+	clip-path: inset(0% 0% 46.15% 0%);
+}
+
+.tree__twtyone {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 12%;
+	width: 6.2%;
+	top: 34.7%;
+	left: 53%;
+	border-radius: 50%;
+	clip-path: inset(0% 0% 48.02% 0%);
+}
+
+.tree__twtytw {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 16%;
+	width: 11%;
+	top: 36%;
+	left: 34.5%;
+	border-radius: 76% 15% 54% 27% / 81% 23% 49% 10%;
+	clip-path: inset(0% 0% 55.27% 0%);
+}
+
+.tree__twtytre {
+	background-color: var(--pure-white);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 5.1%;
+	width: 2.5%;
+	top: 34%;
+	left: 53%;
+	border-radius: 50%;
+}
+
+.tree__twtyfr {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.1); */
+	position: absolute;
+	height: 7%;
+	width: 7%;
+	top: 37.8%;
+	left: 59%;
+	border-radius: 0% 71% 13% 87% / 37% 31% 0% 33%;
+}
+
+.tree__twtyfiv {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 6%;
+	width: 6%;
+	top: 38.8%;
+	left: 60%;
+	border-radius: 0% 100% 3% 100% / 0% 100% 0% 100%;
+}
+
+.tree__twtysix {
+	background-color: var(--mountain-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 5%;
+	width: 5.5%;
+	top: 40.5%;
+	left: 61%;
+	border-radius: 0% 41% 0% 53% / 0% 47% 0% 42%;
+}
+
 /* 
 	background-color: hsla(0, 100%, 50%, 0.2);
 	position: absolute;
