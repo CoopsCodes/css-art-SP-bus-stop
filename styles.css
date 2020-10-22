@@ -645,7 +645,6 @@ img,
 /* peak */
 .tree__one {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 21%;
 	width: 3.5%;
@@ -658,7 +657,6 @@ img,
 /* top background block */
 .tree__two {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 19%;
 	width: 7%;
@@ -680,7 +678,6 @@ img,
 
 .tree__four {
 	background-color: var(--mountain-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 28%;
 	width: 15%;
@@ -693,7 +690,6 @@ img,
 
 .tree__five {
 	background-color: var(--mountain-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 11%;
 	width: 8%;
@@ -706,7 +702,6 @@ img,
 
 .tree__six {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 10%;
 	width: 10%;
@@ -718,7 +713,6 @@ img,
 
 .tree__seven {
 	background-color: var(--mountain-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 15%;
 	width: 8%;
@@ -731,7 +725,6 @@ img,
 
 .tree__eight {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 10%;
 	width: 10%;
@@ -743,7 +736,6 @@ img,
 
 .tree__nine {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 7%;
 	width: 8%;
@@ -756,7 +748,6 @@ img,
 
 .tree__ten {
 	background-color: var(--mountain-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 15%;
 	width: 10%;
@@ -769,7 +760,6 @@ img,
 
 .tree__elvn {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 15%;
 	width: 10%;
@@ -782,7 +772,6 @@ img,
 
 .tree__twlv {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 12%;
 	width: 6.2%;
@@ -794,7 +783,6 @@ img,
 
 .tree__trtn {
 	background-color: var(--pure-white);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 12%;
 	width: 4%;
@@ -806,7 +794,6 @@ img,
 
 .tree__frtn {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 0%, 3%, 0.2); */
 	position: absolute;
 	height: 21%;
 	width: 27%;
@@ -827,7 +814,6 @@ img,
 }
 
 .tree__sxtn {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	background-color: var(--pure-white);
 	position: absolute;
 	height: 10%;
@@ -839,7 +825,6 @@ img,
 }
 
 .tree__svtn {
-	/* background-color: hsla(0, 100%, 50%, 0.11); */
 	background-color: var(--pure-white);
 	position: absolute;
 	height: 10.5%;
@@ -863,7 +848,6 @@ img,
 
 .tree__nintn {
 	background-color: var(--pure-white);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 11%;
 	width: 8%;
@@ -875,7 +859,6 @@ img,
 
 .tree__twty {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 11%;
 	width: 4%;
@@ -887,7 +870,6 @@ img,
 
 .tree__twtyone {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 12%;
 	width: 6.2%;
@@ -899,7 +881,6 @@ img,
 
 .tree__twtytw {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 16%;
 	width: 11%;
@@ -911,7 +892,6 @@ img,
 
 .tree__twtytre {
 	background-color: var(--pure-white);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 5.1%;
 	width: 2.5%;
@@ -922,7 +902,6 @@ img,
 
 .tree__twtyfr {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.1); */
 	position: absolute;
 	height: 7%;
 	width: 7%;
@@ -933,7 +912,6 @@ img,
 
 .tree__twtyfiv {
 	background-color: var(--tree-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 6%;
 	width: 6%;
@@ -944,7 +922,6 @@ img,
 
 .tree__twtysix {
 	background-color: var(--mountain-green);
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
 	position: absolute;
 	height: 5%;
 	width: 5.5%;
@@ -953,6 +930,125 @@ img,
 	border-radius: 0% 41% 0% 53% / 0% 47% 0% 42%;
 }
 
+.tree__twtysvn {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 2.5%;
+	width: 3.2%;
+	top: 40.5%;
+	left: 54%;
+	border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
+}
+.tree__twtyeit {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 2.5%;
+	width: 3.5%;
+	top: 41.4%;
+	left: 54.4%;
+	border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
+}
+.tree__twtynin {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 7%;
+	width: 6%;
+	top: 40%;
+	left: 57%;
+	border-radius: 7% 0% 0% 100% / 0% 0% 0% 34%;
+}
+
+.tree__trty {
+	background-color: var(--pure-white);
+	position: absolute;
+	height: 13%;
+	width: 27.5%;
+	top: 47%;
+	left: 33.3%;
+	border-radius: 53% 23% 26% 0% / 75% 21% 0% 0%;
+}
+
+.tree__trtyone {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 6%;
+	width: 8%;
+	top: 45.8%;
+	left: 42%;
+	border-radius: 50%;
+}
+
+.tree__trtytw {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 26%;
+	width: 39.5%;
+	top: 34%;
+	left: 25.3%;
+	clip-path: polygon(
+		54% 30%,
+		58.23% 43.95%,
+		25.94% 62.19%,
+		37.87% 42.24%,
+		39.16% 41.79%,
+		20.72% 46.03%,
+		9.86% 51.68%,
+		20.79% 33.88%,
+		15px 30.79%,
+		38.72% 12%
+	);
+}
+
+.tree__trtytr {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 6%;
+	width: 9%;
+	top: 42.5%;
+	left: 32%;
+	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.tree__trtyfr {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 6%;
+	width: 5%;
+	top: 44.5%;
+	left: 39%;
+	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.tree__trtyfiv {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 10%;
+	width: 3%;
+	top: 44.5%;
+	left: 48.6%;
+	border-radius: 100%;
+}
+
+.tree__trtysx {
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 8%;
+	width: 3%;
+	top: 44.5%;
+	left: 51.5%;
+	border-radius: 100%;
+}
+
+.tree_trtysvn {
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	background-color: var(--tree-green);
+	position: absolute;
+	height: 11%;
+	width: 21%;
+	top: 37.5%;
+	left: 40.5%;
+	border-radius: 0% 0% 36% 0% / 0% 0% 14% 0%;
+}
 /* 
 	background-color: hsla(0, 100%, 50%, 0.2);
 	position: absolute;
