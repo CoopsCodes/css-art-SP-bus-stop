@@ -337,12 +337,12 @@ img,
 	left: 20%;
 	clip-path: polygon(
 		30.36% 6.83%,
-		44.9% 15.92%,
+		43.28% 10.19%,
 		51.18% 35.71%,
 		57.13% 45.5%,
 		48.66% 54.42%,
 		46.07% 48.71%,
-		42.83% 55.47%,
+		43.64% 56.43%,
 		32.47% 49.38%,
 		35.83% 38.5%,
 		25.41% 22.46%
@@ -632,6 +632,200 @@ img,
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.tree {
+	position: absolute;
+	height: 41%;
+	width: 17%;
+	top: 36.6%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+}
+
+/* peak */
+.tree__one {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 21%;
+	width: 3.5%;
+	top: 0%;
+	left: 50.3%;
+	border-radius: 49% 51% 19% 13% / 26% 25% 0% 0%;
+	transform: rotate(-4deg);
+}
+
+/* top background block */
+.tree__two {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 19%;
+	width: 7%;
+	top: 15%;
+	left: 48.5%;
+	transform: translate(-50%, -50%);
+}
+.tree__three {
+	background-color: var(--mountain-green);
+	position: absolute;
+	height: 28%;
+	width: 15%;
+	top: -13%;
+	left: 35.3%;
+	border-radius: 50%;
+	transform: rotate(-4deg);
+	clip-path: inset(46% 0% 0% 17%);
+}
+
+.tree__four {
+	background-color: var(--mountain-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 28%;
+	width: 15%;
+	top: -10%;
+	left: 55%;
+	border-radius: 50%;
+	transform: rotate(20deg);
+	clip-path: inset(60% 63% 0% 0%);
+}
+
+.tree__five {
+	background-color: var(--mountain-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 11%;
+	width: 8%;
+	top: 14%;
+	left: 55%;
+	border-radius: 50%;
+	transform: rotate(-36deg);
+	clip-path: inset(0% 42.33% 17.58% 0%);
+}
+
+.tree__six {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 10%;
+	width: 10%;
+	top: 10%;
+	left: 38%;
+	border-radius: 50%;
+	clip-path: inset(28.3% 0% 0% 105%);
+}
+
+.tree__seven {
+	background-color: var(--mountain-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 15%;
+	width: 8%;
+	top: 11%;
+	left: 33%;
+	border-radius: 50%;
+	clip-path: inset(0% 0% 59.99% 32.3%);
+	transform: rotate(62deg);
+}
+
+.tree__eight {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 10%;
+	width: 10%;
+	top: 10%;
+	left: 38%;
+	border-radius: 50%;
+	clip-path: inset(66.6% 0% 0% 28.8%);
+}
+
+.tree__nine {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 7%;
+	width: 8%;
+	top: 16%;
+	left: 53%;
+	border-radius: 50%;
+	clip-path: inset(39.16% 36% 0% 0%);
+	transform: rotate(0deg);
+}
+
+.tree__ten {
+	background-color: var(--mountain-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 15%;
+	width: 10%;
+	top: 12%;
+	left: 53%;
+	border-radius: 50%;
+	clip-path: inset(23.82% 26.25% 0% 0%);
+	transform: rotate(-14deg);
+}
+
+.tree__elvn {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 15%;
+	width: 10%;
+	top: 11.5%;
+	left: 50%;
+	border-radius: 50%;
+	clip-path: inset(55.82% 37.25% 0% 0%);
+	transform: rotate(-14deg);
+}
+
+.tree__twlv {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 12%;
+	width: 6.2%;
+	top: 18.5%;
+	left: 47.5%;
+	border-radius: 50%;
+	clip-path: inset(30% 0% 0% 0%);
+}
+
+.tree__trtn {
+	background-color: var(--pure-white);
+	/* background-color: hsla(0, 100%, 50%, 0.2); */
+	position: absolute;
+	height: 12%;
+	width: 4%;
+	top: 26.7%;
+	left: 48.4%;
+	border-radius: 50%;
+	clip-path: inset(0% 0% 65% 0%);
+}
+
+.tree__frtn {
+	background-color: var(--tree-green);
+	/* background-color: hsla(0, 0%, 3%, 0.2); */
+	position: absolute;
+	height: 21%;
+	width: 27%;
+	top: 14%;
+	left: 40%;
+	clip-path: polygon(
+		54% 30%,
+		23% 63%,
+		15% 69%,
+		16% 64%,
+		10% 69%,
+		11% 61%,
+		3.22% 73.05%,
+		5% 57%,
+		-2px 56.31%,
+		30.78% 13.68%
+	);
+}
+
 /* 
 	background-color: hsla(0, 100%, 50%, 0.2);
 	position: absolute;
@@ -643,4 +837,13 @@ img,
 	clip-path: inset(0% 0% 0% 0%);
 	transform: rotate(0deg);
 	border-radius: 0% 0% 0% 0%;
+*/
+
+/* Pill Shape 
+	position: absolute;
+	height: 40%;
+	width: 20%;
+	top: 0;
+	left: 0;
+	border-radius: 99em;
 */
