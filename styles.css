@@ -62,7 +62,7 @@ img,
 .background-mountains {
 	background-color: var(--mountain-green);
 	position: absolute;
-	height: 100%;
+	height: 68%;
 	width: 100%;
 	top: 0.02%;
 	left: 0%;
@@ -574,6 +574,62 @@ img,
 	width: 1.1%;
 	top: 47%;
 	left: 20.3%;
+	transform: translate(-50%, -50%);
+}
+
+.ground {
+	background-color: var(--ground-snow);
+	position: absolute;
+	height: 33%;
+	width: 100%;
+	bottom: 0;
+}
+
+.mound__one {
+	background-color: var(--ground-snow);
+	position: absolute;
+	height: 20%;
+	width: 25%;
+	top: 60.7%;
+	left: -14.9%;
+	border-radius: 50%;
+	clip-path: inset(0% 0% 0% 59.5%);
+}
+
+.mound__two {
+	position: absolute;
+	height: 14%;
+	width: 38%;
+	top: 60.7%;
+	left: -4.9%;
+	clip-path: inset(0% 33% 0% 29.5%);
+}
+
+.mound__three {
+	position: absolute;
+	height: 36%;
+	width: 89%;
+	top: 49.5%;
+	right: -16%;
+	clip-path: inset(0% 17.9% 0% 26%);
+}
+
+.mound__four {
+	position: absolute;
+	height: 20%;
+	width: 52%;
+	top: 52.5%;
+	left: 13%;
+	clip-path: inset(0% 36% 0% 14%);
+}
+
+.mound__five {
+	background-color: var(--ground-snow);
+	position: absolute;
+	height: 20%;
+	width: 20%;
+	top: 73.4%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 }
 /* 
