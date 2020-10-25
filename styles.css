@@ -1,1054 +1,919 @@
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-	/* background: var(--bg); */
+  /* background: var(--bg); */
 }
+
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
+
 :root {
-	--bg: pink;
-	--size: 95;
-	--unit: calc((var(--size) / 2160) * 1vmin);
-
-	/* Background Colours */
-	--mountain-green: rgb(12, 110, 74);
-	--tree-green: rgb(35, 143, 96);
-	--pure-white: rgb(255, 255, 255);
-	--ground-snow: rgb(246, 250, 248);
-	--sky: rgb(143, 215, 248);
-	--sign-yellow: rgb(252, 223, 20);
-	--sign-black: rgb(37, 31, 33);
-	--sign-post: rgb(128, 53, 37);
-
-	/* Common Character Colours */
-	--shoes: rgb(35, 32, 32);
-	--red: rgb(255, 58, 69);
-	--orange: rgb(243, 113, 48);
-	--brown: rgb(128, 53, 37);
-
-	/* Stan */
-	--s-blue: rgb(81, 100, 170);
-	--s-brown: rgb(190, 110, 86);
-
-	/* Kyle */
-	--ky-green-1: rgb(112, 192, 109);
-	--ky-green-2: rgb(23, 154, 105);
-
-	/* Cartman */
-	--c-yellow: rgb(252, 223, 60);
-	--c-blue: rgb(95, 191, 211);
+  --bg: pink;
+  --size: 95;
+  --unit: calc((var(--size) / 2160) * 1vmin);
+  /* Background Colours */
+  --mountain-green: rgb(12, 110, 74);
+  --tree-green: rgb(35, 143, 96);
+  --pure-white: rgb(255, 255, 255);
+  --ground-snow: rgb(246, 250, 248);
+  --sky: rgb(143, 215, 248);
+  --sign-yellow: rgb(252, 223, 20);
+  --sign-black: rgb(37, 31, 33);
+  --sign-post: rgb(128, 53, 37);
+  /* Common Character Colours */
+  --shoes: rgb(35, 32, 32);
+  --red: rgb(255, 58, 69);
+  --orange: rgb(243, 113, 48);
+  --brown: rgb(128, 53, 37);
+  /* Stan */
+  --s-blue: rgb(81, 100, 170);
+  --s-brown: rgb(190, 110, 86);
+  /* Kyle */
+  --ky-green-1: rgb(112, 192, 109);
+  --ky-green-2: rgb(23, 154, 105);
+  /* Cartman */
+  --c-yellow: rgb(252, 223, 60);
+  --c-blue: rgb(95, 191, 211);
 }
 
 img {
-	height: calc((var(--size)) * 1vmin);
-	opacity: 0.7;
+  height: calc((var(--size)) * 1vmin);
+  opacity: 0.7;
 }
 
 img,
 .scene {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: calc(2160 * var(--unit));
-	width: calc(3840 * var(--unit));
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(2160 * var(--unit));
+  width: calc(3840 * var(--unit));
 }
 
 /* Green background, the most root div thats 100% of the image size */
 .background-mountains {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 68%;
-	width: 100%;
-	top: 0.02%;
-	left: 0%;
+  /* background-color: var(--mountain-green); */
+  position: absolute;
+  height: 68%;
+  width: 100%;
+  top: 0.02%;
+  left: 0%;
 }
 
 /* Sky container box */
 .sky {
-	position: absolute;
-	height: 15%;
-	width: 24.5%;
-	top: 7.5%;
-	left: 51%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  height: 15%;
+  width: 24.5%;
+  top: 7.5%;
+  left: 51%;
+  transform: translate(-50%, -50%);
 }
-
-.sky__one {
-	background: var(--sky);
-	position: absolute;
-	height: 208%;
-	width: 10%;
-	top: -70%;
-	left: 17.6%;
-	border-radius: 50% 50% 50% 50%;
-	transform: rotate(-52deg);
-	clip-path: inset(50% 0% 0% 0%);
+.sky .sky__one {
+  background: var(--sky);
+  position: absolute;
+  height: 208%;
+  width: 10%;
+  top: -70%;
+  left: 17.6%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-52deg);
+  clip-path: inset(50% 0% 0% 0%);
 }
-
-.sky__two {
-	background: var(--sky);
-	position: absolute;
-	height: 139%;
-	width: 66%;
-	top: 0%;
-	left: 0%;
-	clip-path: polygon(54% 0%, 2% 0%, 31% 34%);
+.sky .sky__two {
+  background: var(--sky);
+  position: absolute;
+  height: 139%;
+  width: 66%;
+  top: 0%;
+  left: 0%;
+  clip-path: polygon(54% 0%, 2% 0%, 31% 34%);
 }
-
-.sky__three {
-	background: var(--sky);
-	position: absolute;
-	height: 139%;
-	width: 91%;
-	top: 0%;
-	left: 9%;
-	clip-path: polygon(100% 0%, 0% 0%, 44% 72%);
+.sky .sky__three {
+  background: var(--sky);
+  position: absolute;
+  height: 139%;
+  width: 91%;
+  top: 0%;
+  left: 9%;
+  clip-path: polygon(100% 0%, 0% 0%, 44% 72%);
 }
 
 /* Snow caped mountain container */
 .mountain-snow {
-	position: absolute;
-	height: 14.5%;
-	width: 11.6%;
-	top: 8.3%;
-	left: 44.7%;
+  position: absolute;
+  height: 14.5%;
+  width: 11.6%;
+  top: 8.3%;
+  left: 44.7%;
 }
-
-.mountain-snow__one {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 21%;
-	width: 165%;
-	top: 41%;
-	left: -31%;
-	border-radius: 100% 100%;
-	transform: rotate(-38deg);
-	clip-path: inset(0 49% 63% 17%);
+.mountain-snow .mountain-snow__one {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 21%;
+  width: 165%;
+  top: 41%;
+  left: -31%;
+  border-radius: 100% 100%;
+  transform: rotate(-38deg);
+  clip-path: inset(0 49% 63% 17%);
 }
-
-.mountain-snow__two {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 197%;
-	width: 202%;
-	top: -93%;
-	left: -128%;
-	border-radius: 100% 100%;
-	clip-path: inset(69.2% 0% 2% 63.5%);
+.mountain-snow .mountain-snow__two {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 197%;
+  width: 202%;
+  top: -93%;
+  left: -128%;
+  border-radius: 100% 100%;
+  clip-path: inset(69.2% 0% 2% 63.5%);
 }
-
-.mountain-snow__three {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 57.5%;
-	width: 51%;
-	top: 42.5%;
-	left: -1%;
-	clip-path: polygon(96% 0, 0 0, 0 101%);
+.mountain-snow .mountain-snow__three {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 57.5%;
+  width: 51%;
+  top: 42.5%;
+  left: -1%;
+  clip-path: polygon(96% 0, 0 0, 0 101%);
 }
-
-.mountain-snow__four {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 13%;
-	width: 10%;
-	top: 0.5%;
-	left: 90%;
-	border-radius: 100% 70% 100% 100%;
+.mountain-snow .mountain-snow__four {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 13%;
+  width: 10%;
+  top: 0.5%;
+  left: 90%;
+  border-radius: 100% 70% 100% 100%;
 }
-
-.mountain-snow__five {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 32%;
-	width: 75%;
-	top: 9%;
-	left: 28%;
-	border-radius: 100% 100% 100% 100%;
-	clip-path: inset(50% 0% 0% 54%);
-	transform: rotate(-23deg);
+.mountain-snow .mountain-snow__five {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 32%;
+  width: 75%;
+  top: 9%;
+  left: 28%;
+  border-radius: 100% 100% 100% 100%;
+  clip-path: inset(50% 0% 0% 54%);
+  transform: rotate(-23deg);
 }
-
-.mountain-snow__six {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 50%;
-	width: 50%;
-	top: 25%;
-	left: 56%;
-	border-radius: 100% 0% 100% 0%;
+.mountain-snow .mountain-snow__six {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 56%;
+  border-radius: 100% 0% 100% 0%;
 }
-.mountain-snow__seven {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 117%;
-	width: 10%;
-	top: -23%;
-	left: 56.3%;
-	border-radius: 100% 10% 100% 10%;
-	transform: rotate(49.5deg);
+.mountain-snow .mountain-snow__seven {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 117%;
+  width: 10%;
+  top: -23%;
+  left: 56.3%;
+  border-radius: 100% 10% 100% 10%;
+  transform: rotate(49.5deg);
 }
-
-.mountain-snow__eight {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 50%;
-	width: 50%;
-	top: 7%;
-	left: 50%;
-	clip-path: polygon(
-		88.45% -10.44%,
-		61.61% 46.88%,
-		17.61% 93.27%,
-		1.6% 74.36%
-	);
+.mountain-snow .mountain-snow__eight {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 7%;
+  left: 50%;
+  clip-path: polygon(88.45% -10.44%, 61.61% 46.88%, 17.61% 93.27%, 1.6% 74.36%);
 }
-
-.mountain-snow__nine {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 10%;
-	width: 10%;
-	top: 6%;
-	left: 86%;
-	border-radius: 50%;
+.mountain-snow .mountain-snow__nine {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  top: 6%;
+  left: 86%;
+  border-radius: 50%;
 }
 
 .sign {
-	position: absolute;
-	height: 34.5%;
-	width: 19.4%;
-	top: 21%;
-	left: 20.3%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  height: 34.5%;
+  width: 19.4%;
+  top: 21%;
+  left: 20.3%;
+  transform: translate(-50%, -50%);
+  /* Border of sign: one + two + three */
+  /* First character */
+  /* Head */
+  /* brief case */
+  /*  Left arm */
+  /* Torso + Shorts clip-path */
+  /* Left Leg upper */
+  /* Left Leg lower  */
+  /* Right Leg */
+  /* Right Leg */
+  /* Right Character */
+  /* Head */
+  /* Hair */
+  /* Hair tie */
+  /* Left Arm */
+  /* Right Arm */
+  /* Right Arm */
+  /* Dress clip-path */
+  /* Left Leg top */
+  /* Left Leg bottom */
 }
-
-/* Border of sign: one + two + three */
-.sign__one {
-	background-color: var(--sign-yellow);
-	position: absolute;
-	height: 72%;
-	width: 71.5%;
-	top: 14%;
-	left: 14.5%;
-	border-radius: 5% 3% 3% 4%;
-	transform: rotate(45deg);
+.sign .sign__one {
+  background-color: var(--sign-yellow);
+  position: absolute;
+  height: 72%;
+  width: 71.5%;
+  top: 14%;
+  left: 14.5%;
+  border-radius: 5% 3% 3% 4%;
+  transform: rotate(45deg);
 }
-
-.sign__two {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 70%;
-	width: 69%;
-	top: 15%;
-	left: 15.8%;
-	border-radius: 5% 3% 3% 4%;
-	transform: rotate(45deg);
+.sign .sign__two {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 70%;
+  width: 69%;
+  top: 15%;
+  left: 15.8%;
+  border-radius: 5% 3% 3% 4%;
+  transform: rotate(45deg);
 }
-
-.sign__three {
-	background-color: var(--sign-yellow);
-	position: absolute;
-	height: 66%;
-	width: 65%;
-	top: 17%;
-	left: 17.8%;
-	border-radius: 5% 3% 3% 4%;
-	transform: rotate(45deg);
+.sign .sign__three {
+  background-color: var(--sign-yellow);
+  position: absolute;
+  height: 66%;
+  width: 65%;
+  top: 17%;
+  left: 17.8%;
+  border-radius: 5% 3% 3% 4%;
+  transform: rotate(45deg);
 }
-
-/* First character */
-/* Head */
-.sign__four {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 9%;
-	width: 9%;
-	top: 32%;
-	left: 32%;
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
+.sign .sign__four {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 9%;
+  width: 9%;
+  top: 32%;
+  left: 32%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
-
-/* brief case */
-.sign__five {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 33%;
-	width: 30%;
-	top: 55%;
-	left: 30%;
-	transform: translate(-50%, -50%);
-	clip-path: polygon(
-		25.47% 37.91%,
-		60.53% 60.58%,
-		43.42% 83.75%,
-		9.94% 61.9%
-	);
+.sign .sign__five {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 33%;
+  width: 30%;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(25.47% 37.91%, 60.53% 60.58%, 43.42% 83.75%, 9.94% 61.9%);
 }
-
-/*  Left arm */
-.sign__six {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 20.6%;
-	width: 3.8%;
-	top: 34.5%;
-	left: 31.3%;
-	border-radius: 57% / 12%;
-	transform: rotate(28.5deg);
-	clip-path: inset(12.37% 0% 0% 0%);
+.sign .sign__six {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 20.6%;
+  width: 3.8%;
+  top: 34.5%;
+  left: 31.3%;
+  border-radius: 57%/12%;
+  transform: rotate(28.5deg);
+  clip-path: inset(12.37% 0% 0% 0%);
 }
-
-.sign__seven {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 4.5%;
-	width: 4.5%;
-	top: 38.3%;
-	left: 37.4%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
+.sign .sign__seven {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 4.5%;
+  width: 4.5%;
+  top: 38.3%;
+  left: 37.4%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
-
-.sign__eight {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 17.5%;
-	width: 3.8%;
-	top: 31.4%;
-	left: 42.5%;
-	border-radius: 57% / 17%;
-	transform: rotate(111.5deg);
+.sign .sign__eight {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 17.5%;
+  width: 3.8%;
+  top: 31.4%;
+  left: 42.5%;
+  border-radius: 57%/17%;
+  transform: rotate(111.5deg);
 }
-
-/* Torso + Shorts clip-path */
-.sign__nine {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 44%;
-	width: 52%;
-	top: 35%;
-	left: 20%;
-	clip-path: polygon(
-		30.36% 6.83%,
-		43.28% 10.19%,
-		51.18% 35.71%,
-		57.13% 45.5%,
-		48.66% 54.42%,
-		46.07% 48.71%,
-		43.64% 56.43%,
-		32.47% 49.38%,
-		35.83% 38.5%,
-		25.41% 22.46%
-	);
+.sign .sign__nine {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 44%;
+  width: 52%;
+  top: 35%;
+  left: 20%;
+  clip-path: polygon(30.36% 6.83%, 43.28% 10.19%, 51.18% 35.71%, 57.13% 45.5%, 48.66% 54.42%, 46.07% 48.71%, 43.64% 56.43%, 32.47% 49.38%, 35.83% 38.5%, 25.41% 22.46%);
 }
-
-/* Left Leg upper */
-.sign__ten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 10%;
-	width: 3.8%;
-	top: 53%;
-	left: 38.5%;
-	border-radius: 60% / 17%;
-	transform: rotate(27deg);
+.sign .sign__ten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 10%;
+  width: 3.8%;
+  top: 53%;
+  left: 38.5%;
+  border-radius: 60%/17%;
+  transform: rotate(27deg);
 }
-
-/* Left Leg lower  */
-.sign__elevn {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 17.5%;
-	width: 3.8%;
-	top: 59.2%;
-	left: 37.5%;
-	border-radius: 60% / 17%;
-	transform: rotate(-9deg);
+.sign .sign__elevn {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 17.5%;
+  width: 3.8%;
+  top: 59.2%;
+  left: 37.5%;
+  border-radius: 60%/17%;
+  transform: rotate(-9deg);
 }
-
-/* Right Leg */
-.sign__twlve {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 12%;
-	width: 4%;
-	top: 51.7%;
-	left: 51.5%;
-	border-radius: 59% / 29%;
-	transform: rotate(57deg);
+.sign .sign__twlve {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 12%;
+  width: 4%;
+  top: 51.7%;
+  left: 51.5%;
+  border-radius: 59%/29%;
+  transform: rotate(57deg);
 }
-
-/* Right Leg */
-.sign__trten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 4%;
-	width: 5%;
-	top: 56%;
-	left: 45.8%;
-	transform: rotate(52deg);
+.sign .sign__trten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 4%;
+  width: 5%;
+  top: 56%;
+  left: 45.8%;
+  transform: rotate(52deg);
 }
-
-/* Right Character */
-/* Head */
-.sign__frten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 8.3%;
-	width: 8.3%;
-	top: 35.8%;
-	left: 65.2%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
+.sign .sign__frten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 8.3%;
+  width: 8.3%;
+  top: 35.8%;
+  left: 65.2%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
-
-/* Hair */
-.sign__sxten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 12%;
-	width: 2%;
-	top: 32.3%;
-	left: 67.5%;
-	border-radius: 59% / 13%;
-	transform: rotate(-61deg);
+.sign .sign__sxten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 12%;
+  width: 2%;
+  top: 32.3%;
+  left: 67.5%;
+  border-radius: 59%/13%;
+  transform: rotate(-61deg);
 }
-
-/* Hair tie */
-.sign__svten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 40%;
-	width: 40%;
-	top: 23%;
-	left: 50%;
-	clip-path: polygon(
-		49.58% 32.71%,
-		59.1% 37.71%,
-		52.41% 41.56%,
-		51.27% 47.96%,
-		41.61% 43.58%,
-		50.29% 39.29%
-	);
+.sign .sign__svten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  top: 23%;
+  left: 50%;
+  clip-path: polygon(49.58% 32.71%, 59.1% 37.71%, 52.41% 41.56%, 51.27% 47.96%, 41.61% 43.58%, 50.29% 39.29%);
 }
-
-/* Left Arm */
-.sign__egten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 8%;
-	width: 3.2%;
-	top: 43%;
-	left: 54%;
-	border-radius: 57% / 24%;
-	transform: rotate(-39deg);
+.sign .sign__egten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 8%;
+  width: 3.2%;
+  top: 43%;
+  left: 54%;
+  border-radius: 57%/24%;
+  transform: rotate(-39deg);
 }
-
-.sign__ninten {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 12.5%;
-	width: 3.2%;
-	top: 40%;
-	left: 60%;
-	border-radius: 57% / 24%;
-	transform: rotate(57deg);
+.sign .sign__ninten {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 12.5%;
+  width: 3.2%;
+  top: 40%;
+  left: 60%;
+  border-radius: 57%/24%;
+  transform: rotate(57deg);
 }
-
-/* Right Arm */
-.sign__twty {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 9.5%;
-	width: 3.2%;
-	top: 40%;
-	left: 67.5%;
-	border-radius: 57% / 24%;
-	transform: rotate(-73deg);
+.sign .sign__twty {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 9.5%;
+  width: 3.2%;
+  top: 40%;
+  left: 67.5%;
+  border-radius: 57%/24%;
+  transform: rotate(-73deg);
 }
-
-/* Right Arm */
-.sign__twtone {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 7%;
-	width: 3%;
-	top: 44.5%;
-	left: 71.5%;
-	border-radius: 57% / 24%;
-	transform: rotate(-17deg);
+.sign .sign__twtone {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 7%;
+  width: 3%;
+  top: 44.5%;
+  left: 71.5%;
+  border-radius: 57%/24%;
+  transform: rotate(-17deg);
 }
-
-/* Dress clip-path */
-.sign__twtwo {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 20%;
-	width: 20%;
-	top: 41%;
-	left: 56%;
-	clip-path: polygon(
-		54.21% 8.42%,
-		75.26% 17.89%,
-		62.3% 49.48%,
-		79.21% 89.48%,
-		25% 91.58%,
-		36.8% 49.48%,
-		24.74% 28.41%
-	);
+.sign .sign__twtwo {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  top: 41%;
+  left: 56%;
+  clip-path: polygon(54.21% 8.42%, 75.26% 17.89%, 62.3% 49.48%, 79.21% 89.48%, 25% 91.58%, 36.8% 49.48%, 24.74% 28.41%);
 }
-
-/* Left Leg top */
-.sign__twtre {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 10%;
-	width: 3.5%;
-	top: 57%;
-	left: 61.6%;
-	border-radius: 57% / 24%;
-	transform: rotate(19deg);
+.sign .sign__twtre {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 10%;
+  width: 3.5%;
+  top: 57%;
+  left: 61.6%;
+  border-radius: 57%/24%;
+  transform: rotate(19deg);
 }
-
-/* Left Leg bottom */
-.sign__twfour {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 13%;
-	width: 3.5%;
-	top: 63.5%;
-	left: 61.4%;
-	border-radius: 57% / 15%;
-	transform: rotate(-9deg);
+.sign .sign__twfour {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 13%;
+  width: 3.5%;
+  top: 63.5%;
+  left: 61.4%;
+  border-radius: 57%/15%;
+  transform: rotate(-9deg);
 }
-
-.sign__twfive {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 10%;
-	width: 3.5%;
-	top: 54%;
-	left: 67.5%;
-	border-radius: 57% / 24%;
-	transform: rotate(-24deg);
+.sign .sign__twfive {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 10%;
+  width: 3.5%;
+  top: 54%;
+  left: 67.5%;
+  border-radius: 57%/24%;
+  transform: rotate(-24deg);
 }
-
-.sign__twsix {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 10%;
-	width: 3.5%;
-	top: 55.7%;
-	left: 73%;
-	border-radius: 57% / 24%;
-	transform: rotate(69deg);
+.sign .sign__twsix {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 10%;
+  width: 3.5%;
+  top: 55.7%;
+  left: 73%;
+  border-radius: 57%/24%;
+  transform: rotate(69deg);
 }
-
-.sign__twsvn {
-	background-color: var(--sign-black);
-	position: absolute;
-	height: 20%;
-	width: 20%;
-	top: 55%;
-	left: 76%;
-	transform: translate(-50%, -50%);
-	clip-path: polygon(
-		29.53% 42.71%,
-		57.81% 33.54%,
-		72.7% 55.89%,
-		31.5% 70.54%
-	);
+.sign .sign__twsvn {
+  background-color: var(--sign-black);
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  top: 55%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(29.53% 42.71%, 57.81% 33.54%, 72.7% 55.89%, 31.5% 70.54%);
 }
-
-.sign-post {
-	background-color: var(--sign-post);
-	position: absolute;
-	height: 60%;
-	width: 1.1%;
-	top: 47%;
-	left: 20.3%;
-	transform: translate(-50%, -50%);
+.sign .sign-post {
+  background-color: var(--sign-post);
+  position: absolute;
+  height: 60%;
+  width: 1.1%;
+  top: 47%;
+  left: 20.3%;
+  transform: translate(-50%, -50%);
 }
 
 .ground {
-	background-color: var(--ground-snow);
-	position: absolute;
-	height: 33%;
-	width: 100%;
-	bottom: 0;
+  background-color: var(--ground-snow);
+  position: absolute;
+  height: 33%;
+  width: 100%;
+  bottom: 0;
 }
 
 .mound__one {
-	background-color: var(--ground-snow);
-	position: absolute;
-	height: 20%;
-	width: 25%;
-	top: 60.7%;
-	left: -14.9%;
-	border-radius: 50%;
-	clip-path: inset(0% 0% 0% 59.5%);
+  background-color: var(--ground-snow);
+  position: absolute;
+  height: 20%;
+  width: 25%;
+  top: 60.7%;
+  left: -14.9%;
+  border-radius: 50%;
+  clip-path: inset(0% 0% 0% 59.5%);
 }
 
 .mound__two {
-	position: absolute;
-	height: 14%;
-	width: 38%;
-	top: 60.7%;
-	left: -4.9%;
-	clip-path: inset(0% 33% 0% 29.5%);
+  position: absolute;
+  height: 14%;
+  width: 38%;
+  top: 60.7%;
+  left: -4.9%;
+  clip-path: inset(0% 33% 0% 29.5%);
 }
 
 .mound__three {
-	position: absolute;
-	height: 36%;
-	width: 89%;
-	top: 49.5%;
-	right: -16%;
-	clip-path: inset(0% 17.9% 0% 26%);
+  position: absolute;
+  height: 36%;
+  width: 89%;
+  top: 49.5%;
+  right: -16%;
+  clip-path: inset(0% 17.9% 0% 26%);
 }
 
 .mound__four {
-	position: absolute;
-	height: 20%;
-	width: 52%;
-	top: 52.5%;
-	left: 13%;
-	clip-path: inset(0% 36% 0% 14%);
+  position: absolute;
+  height: 20%;
+  width: 52%;
+  top: 52.5%;
+  left: 13%;
+  clip-path: inset(0% 36% 0% 14%);
 }
 
 .mound__five {
-	background-color: var(--ground-snow);
-	position: absolute;
-	height: 20%;
-	width: 20%;
-	top: 73.4%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  background-color: var(--ground-snow);
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  top: 73.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tree {
-	position: absolute;
-	height: 41%;
-	width: 17%;
-	top: 36.6%;
-	left: 70%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  height: 41%;
+  width: 17%;
+  top: 36.6%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  /* peak */
+  /* top background block */
+}
+.tree .tree__one {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 21%;
+  width: 3.5%;
+  top: 0%;
+  left: 50.3%;
+  border-radius: 49% 51% 19% 13%/26% 25% 0% 0%;
+  transform: rotate(-4deg);
+}
+.tree .tree__two {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 19%;
+  width: 7%;
+  top: 15%;
+  left: 48.5%;
+  transform: translate(-50%, -50%);
+}
+.tree .tree__three {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 28%;
+  width: 15%;
+  top: -13%;
+  left: 35.3%;
+  border-radius: 50%;
+  transform: rotate(-4deg);
+  clip-path: inset(46% 0% 0% 17%);
+}
+.tree .tree__four {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 28%;
+  width: 15%;
+  top: -10%;
+  left: 55%;
+  border-radius: 50%;
+  transform: rotate(20deg);
+  clip-path: inset(60% 63% 0% 0%);
+}
+.tree .tree__five {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 11%;
+  width: 8%;
+  top: 14%;
+  left: 55%;
+  border-radius: 50%;
+  transform: rotate(-36deg);
+  clip-path: inset(0% 42.33% 17.58% 0%);
+}
+.tree .tree__six {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  top: 10%;
+  left: 38%;
+  border-radius: 50%;
+  clip-path: inset(28.3% 0% 0% 105%);
+}
+.tree .tree__seven {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 15%;
+  width: 8%;
+  top: 11%;
+  left: 33%;
+  border-radius: 50%;
+  clip-path: inset(0% 0% 59.99% 32.3%);
+  transform: rotate(62deg);
+}
+.tree .tree__eight {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  top: 10%;
+  left: 38%;
+  border-radius: 50%;
+  clip-path: inset(66.6% 0% 0% 28.8%);
+}
+.tree .tree__nine {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 7%;
+  width: 8%;
+  top: 16%;
+  left: 53%;
+  border-radius: 50%;
+  clip-path: inset(39.16% 36% 0% 0%);
+  transform: rotate(0deg);
+}
+.tree .tree__ten {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 15%;
+  width: 10%;
+  top: 12%;
+  left: 53%;
+  border-radius: 50%;
+  clip-path: inset(23.82% 26.25% 0% 0%);
+  transform: rotate(-14deg);
+}
+.tree .tree__elvn {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 15%;
+  width: 10%;
+  top: 11.5%;
+  left: 50%;
+  border-radius: 50%;
+  clip-path: inset(55.82% 37.25% 0% 0%);
+  transform: rotate(-14deg);
+}
+.tree .tree__twlv {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 12%;
+  width: 6.2%;
+  top: 18.5%;
+  left: 47.5%;
+  border-radius: 50%;
+  clip-path: inset(30% 0% 0% 0%);
+}
+.tree .tree__trtn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 12%;
+  width: 4%;
+  top: 26.7%;
+  left: 48.4%;
+  border-radius: 50%;
+  clip-path: inset(0% 0% 65% 0%);
+}
+.tree .tree__frtn {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 21%;
+  width: 27%;
+  top: 14%;
+  left: 40%;
+  clip-path: polygon(54% 30%, 23% 63%, 15% 69%, 16% 64%, 10% 69%, 11% 61%, 3.22% 73.05%, 5% 57%, -2px 56.31%, 30.78% 13.68%);
+}
+.tree .tree__sxtn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 10%;
+  width: 12%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 79% 30% 19% 13%/55% 25% 0% 0%;
+}
+.tree .tree__svtn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 10.5%;
+  width: 26.3%;
+  top: 29.3%;
+  left: 37.4%;
+  transform: rotate(-3deg);
+  border-radius: 66% 0% 54% 11%/81% 25% 49% 10%;
+}
+.tree .tree__eitn {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 12%;
+  width: 20%;
+  top: 23%;
+  left: 55.8%;
+  border-radius: 50%;
+  clip-path: inset(31% 54% 0% 0%);
+}
+.tree .tree__nintn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 11%;
+  width: 8%;
+  top: 34%;
+  left: 45%;
+  border-radius: 50%;
+  transform: rotate(8deg);
+}
+.tree .tree__twty {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 11%;
+  width: 4%;
+  top: 40%;
+  left: 47.1%;
+  border-radius: 50%;
+  clip-path: inset(0% 0% 46.15% 0%);
+}
+.tree .tree__twtyone {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 12%;
+  width: 6.2%;
+  top: 34.7%;
+  left: 53%;
+  border-radius: 50%;
+  clip-path: inset(0% 0% 48.02% 0%);
+}
+.tree .tree__twtytw {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 16%;
+  width: 11%;
+  top: 36%;
+  left: 34.5%;
+  border-radius: 76% 15% 54% 27%/81% 23% 49% 10%;
+  clip-path: inset(0% 0% 55.27% 0%);
+}
+.tree .tree__twtytre {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 5.1%;
+  width: 2.5%;
+  top: 34%;
+  left: 53%;
+  border-radius: 50%;
+}
+.tree .tree__twtyfr {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 7%;
+  width: 7%;
+  top: 37.8%;
+  left: 59%;
+  border-radius: 0% 71% 13% 87%/37% 31% 0% 33%;
+}
+.tree .tree__twtyfiv {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 6%;
+  width: 6%;
+  top: 38.8%;
+  left: 60%;
+  border-radius: 0% 100% 3% 100%/0% 100% 0% 100%;
+}
+.tree .tree__twtysix {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 5%;
+  width: 5.5%;
+  top: 40.5%;
+  left: 61%;
+  border-radius: 0% 41% 0% 53%/0% 47% 0% 42%;
+}
+.tree .tree__twtysvn {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 2.5%;
+  width: 3.2%;
+  top: 40.5%;
+  left: 54%;
+  border-radius: 0% 0% 0% 100%/0% 0% 0% 100%;
+}
+.tree .tree__twtyeit {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 2.5%;
+  width: 3.5%;
+  top: 41.4%;
+  left: 54.4%;
+  border-radius: 0% 0% 0% 100%/0% 0% 0% 100%;
+}
+.tree .tree__twtynin {
+  background-color: var(--mountain-green);
+  position: absolute;
+  height: 7%;
+  width: 6%;
+  top: 40%;
+  left: 57%;
+  border-radius: 7% 0% 0% 100%/0% 0% 0% 34%;
+}
+.tree .tree__trty {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 13%;
+  width: 27.5%;
+  top: 47%;
+  left: 33.3%;
+  border-radius: 53% 23% 26% 0%/75% 21% 0% 0%;
+}
+.tree .tree__trtyone {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 6%;
+  width: 8%;
+  top: 45.8%;
+  left: 42%;
+  border-radius: 50%;
+}
+.tree .tree__trtytw {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 26%;
+  width: 39.5%;
+  top: 34%;
+  left: 25.3%;
+  clip-path: polygon(54% 30%, 58.23% 43.95%, 25.94% 62.19%, 37.87% 42.24%, 39.16% 41.79%, 20.72% 46.03%, 9.86% 51.68%, 20.79% 33.88%, 15px 30.79%, 38.72% 12%);
+}
+.tree .tree__trtytr {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 6%;
+  width: 9%;
+  top: 42.5%;
+  left: 32%;
+  border-radius: 100% 0% 100% 0%/100% 0% 100% 0%;
+}
+.tree .tree__trtyfr {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 6%;
+  width: 5%;
+  top: 44.5%;
+  left: 39%;
+  border-radius: 100% 0% 100% 0%/100% 0% 100% 0%;
+}
+.tree .tree__trtyfiv {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 10%;
+  width: 3%;
+  top: 44.5%;
+  left: 48.6%;
+  border-radius: 100%;
+}
+.tree .tree__trtysx {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 8%;
+  width: 3%;
+  top: 44.5%;
+  left: 51.5%;
+  border-radius: 100%;
+}
+.tree .tree_trtysvn {
+  /* background-color: hsla(0, 100%, 50%, 0.2); */
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 11%;
+  width: 21%;
+  top: 37.5%;
+  left: 40.5%;
+  border-radius: 0% 0% 36% 0%/0% 0% 14% 0%;
 }
 
-/* peak */
-.tree__one {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 21%;
-	width: 3.5%;
-	top: 0%;
-	left: 50.3%;
-	border-radius: 49% 51% 19% 13% / 26% 25% 0% 0%;
-	transform: rotate(-4deg);
-}
-
-/* top background block */
-.tree__two {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 19%;
-	width: 7%;
-	top: 15%;
-	left: 48.5%;
-	transform: translate(-50%, -50%);
-}
-.tree__three {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 28%;
-	width: 15%;
-	top: -13%;
-	left: 35.3%;
-	border-radius: 50%;
-	transform: rotate(-4deg);
-	clip-path: inset(46% 0% 0% 17%);
-}
-
-.tree__four {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 28%;
-	width: 15%;
-	top: -10%;
-	left: 55%;
-	border-radius: 50%;
-	transform: rotate(20deg);
-	clip-path: inset(60% 63% 0% 0%);
-}
-
-.tree__five {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 11%;
-	width: 8%;
-	top: 14%;
-	left: 55%;
-	border-radius: 50%;
-	transform: rotate(-36deg);
-	clip-path: inset(0% 42.33% 17.58% 0%);
-}
-
-.tree__six {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 10%;
-	width: 10%;
-	top: 10%;
-	left: 38%;
-	border-radius: 50%;
-	clip-path: inset(28.3% 0% 0% 105%);
-}
-
-.tree__seven {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 15%;
-	width: 8%;
-	top: 11%;
-	left: 33%;
-	border-radius: 50%;
-	clip-path: inset(0% 0% 59.99% 32.3%);
-	transform: rotate(62deg);
-}
-
-.tree__eight {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 10%;
-	width: 10%;
-	top: 10%;
-	left: 38%;
-	border-radius: 50%;
-	clip-path: inset(66.6% 0% 0% 28.8%);
-}
-
-.tree__nine {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 7%;
-	width: 8%;
-	top: 16%;
-	left: 53%;
-	border-radius: 50%;
-	clip-path: inset(39.16% 36% 0% 0%);
-	transform: rotate(0deg);
-}
-
-.tree__ten {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 15%;
-	width: 10%;
-	top: 12%;
-	left: 53%;
-	border-radius: 50%;
-	clip-path: inset(23.82% 26.25% 0% 0%);
-	transform: rotate(-14deg);
-}
-
-.tree__elvn {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 15%;
-	width: 10%;
-	top: 11.5%;
-	left: 50%;
-	border-radius: 50%;
-	clip-path: inset(55.82% 37.25% 0% 0%);
-	transform: rotate(-14deg);
-}
-
-.tree__twlv {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 12%;
-	width: 6.2%;
-	top: 18.5%;
-	left: 47.5%;
-	border-radius: 50%;
-	clip-path: inset(30% 0% 0% 0%);
-}
-
-.tree__trtn {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 12%;
-	width: 4%;
-	top: 26.7%;
-	left: 48.4%;
-	border-radius: 50%;
-	clip-path: inset(0% 0% 65% 0%);
-}
-
-.tree__frtn {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 21%;
-	width: 27%;
-	top: 14%;
-	left: 40%;
-	clip-path: polygon(
-		54% 30%,
-		23% 63%,
-		15% 69%,
-		16% 64%,
-		10% 69%,
-		11% 61%,
-		3.22% 73.05%,
-		5% 57%,
-		-2px 56.31%,
-		30.78% 13.68%
-	);
-}
-
-.tree__sxtn {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 10%;
-	width: 12%;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 79% 30% 19% 13% / 55% 25% 0% 0%;
-}
-
-.tree__svtn {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 10.5%;
-	width: 26.3%;
-	top: 29.3%;
-	left: 37.4%;
-	transform: rotate(-3deg);
-	border-radius: 66% 0% 54% 11% / 81% 25% 49% 10%;
-}
-
-.tree__eitn {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 12%;
-	width: 20%;
-	top: 23%;
-	left: 55.8%;
-	border-radius: 50%;
-	clip-path: inset(31% 54% 0% 0%);
-}
-
-.tree__nintn {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 11%;
-	width: 8%;
-	top: 34%;
-	left: 45%;
-	border-radius: 50%;
-	transform: rotate(8deg);
-}
-
-.tree__twty {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 11%;
-	width: 4%;
-	top: 40%;
-	left: 47.1%;
-	border-radius: 50%;
-	clip-path: inset(0% 0% 46.15% 0%);
-}
-
-.tree__twtyone {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 12%;
-	width: 6.2%;
-	top: 34.7%;
-	left: 53%;
-	border-radius: 50%;
-	clip-path: inset(0% 0% 48.02% 0%);
-}
-
-.tree__twtytw {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 16%;
-	width: 11%;
-	top: 36%;
-	left: 34.5%;
-	border-radius: 76% 15% 54% 27% / 81% 23% 49% 10%;
-	clip-path: inset(0% 0% 55.27% 0%);
-}
-
-.tree__twtytre {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 5.1%;
-	width: 2.5%;
-	top: 34%;
-	left: 53%;
-	border-radius: 50%;
-}
-
-.tree__twtyfr {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 7%;
-	width: 7%;
-	top: 37.8%;
-	left: 59%;
-	border-radius: 0% 71% 13% 87% / 37% 31% 0% 33%;
-}
-
-.tree__twtyfiv {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 6%;
-	width: 6%;
-	top: 38.8%;
-	left: 60%;
-	border-radius: 0% 100% 3% 100% / 0% 100% 0% 100%;
-}
-
-.tree__twtysix {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 5%;
-	width: 5.5%;
-	top: 40.5%;
-	left: 61%;
-	border-radius: 0% 41% 0% 53% / 0% 47% 0% 42%;
-}
-
-.tree__twtysvn {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 2.5%;
-	width: 3.2%;
-	top: 40.5%;
-	left: 54%;
-	border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
-}
-.tree__twtyeit {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 2.5%;
-	width: 3.5%;
-	top: 41.4%;
-	left: 54.4%;
-	border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
-}
-.tree__twtynin {
-	background-color: var(--mountain-green);
-	position: absolute;
-	height: 7%;
-	width: 6%;
-	top: 40%;
-	left: 57%;
-	border-radius: 7% 0% 0% 100% / 0% 0% 0% 34%;
-}
-
-.tree__trty {
-	background-color: var(--pure-white);
-	position: absolute;
-	height: 13%;
-	width: 27.5%;
-	top: 47%;
-	left: 33.3%;
-	border-radius: 53% 23% 26% 0% / 75% 21% 0% 0%;
-}
-
-.tree__trtyone {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 6%;
-	width: 8%;
-	top: 45.8%;
-	left: 42%;
-	border-radius: 50%;
-}
-
-.tree__trtytw {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 26%;
-	width: 39.5%;
-	top: 34%;
-	left: 25.3%;
-	clip-path: polygon(
-		54% 30%,
-		58.23% 43.95%,
-		25.94% 62.19%,
-		37.87% 42.24%,
-		39.16% 41.79%,
-		20.72% 46.03%,
-		9.86% 51.68%,
-		20.79% 33.88%,
-		15px 30.79%,
-		38.72% 12%
-	);
-}
-
-.tree__trtytr {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 6%;
-	width: 9%;
-	top: 42.5%;
-	left: 32%;
-	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
-}
-
-.tree__trtyfr {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 6%;
-	width: 5%;
-	top: 44.5%;
-	left: 39%;
-	border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
-}
-
-.tree__trtyfiv {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 10%;
-	width: 3%;
-	top: 44.5%;
-	left: 48.6%;
-	border-radius: 100%;
-}
-
-.tree__trtysx {
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 8%;
-	width: 3%;
-	top: 44.5%;
-	left: 51.5%;
-	border-radius: 100%;
-}
-
-.tree_trtysvn {
-	/* background-color: hsla(0, 100%, 50%, 0.2); */
-	background-color: var(--tree-green);
-	position: absolute;
-	height: 11%;
-	width: 21%;
-	top: 37.5%;
-	left: 40.5%;
-	border-radius: 0% 0% 36% 0% / 0% 0% 14% 0%;
-}
 /* 
 	background-color: hsla(0, 100%, 50%, 0.2);
 	position: absolute;
@@ -1061,7 +926,6 @@ img,
 	transform: rotate(0deg);
 	border-radius: 0% 0% 0% 0%;
 */
-
 /* Pill Shape 
 	position: absolute;
 	height: 40%;
@@ -1070,3 +934,5 @@ img,
 	left: 0;
 	border-radius: 99em;
 */
+
+/*# sourceMappingURL=styles.css.map */
