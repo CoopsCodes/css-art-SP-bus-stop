@@ -889,13 +889,14 @@ img,
 		border-radius: 7% 0% 0% 100% / 0% 0% 0% 34%;
 	}
 	.tree__trty {
-		background-color: var(--pure-white);
+		background-color: rgba(255, 0, 0, 0.2);
+		// background-color: var(--pure-white);
 		position: absolute;
-		height: 13%;
-		width: 27.5%;
+		height: 17%;
+		width: 29%;
 		top: 47%;
-		left: 33.3%;
-		border-radius: 53% 23% 26% 0% / 75% 21% 0% 0%;
+		left: 32%;
+		border-radius: 53% 23% 26% 0%/75% 21% 0% 0%;
 	}
 	.tree__trtyone {
 		background-color: var(--tree-green);
@@ -962,8 +963,7 @@ img,
 		left: 51.5%;
 		border-radius: 100%;
 	}
-	.tree_trtysvn {
-		/* background-color: hsla(0, 100%, 50%, 0.2); */
+	.tree__trtysvn {
 		background-color: var(--tree-green);
 		position: absolute;
 		height: 11%;
@@ -971,6 +971,63 @@ img,
 		top: 37.5%;
 		left: 40.5%;
 		border-radius: 0% 0% 36% 0% / 0% 0% 14% 0%;
+	}
+	.tree__trtyeit {
+		// background-color: var(--pure-white);
+		background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 9%;
+		width: 3.2%;
+		top: 56%;
+		left: 29.4%;
+		border-radius: 99vw;
+		transform: rotate(46deg);
+		&::before {
+			background: rgba(255, 0, 0, 0.2);
+			// background-color: var(--pure-white);
+			content: "";
+			position: absolute;
+			top: -51%;
+			left: 132%;
+			height: 118%;
+			width: 229%;
+			border-radius: 50%;
+			transform: rotate(-33deg);
+		}
+	}
+	.tree__trtynine {
+		background-color: rgba(255, 0, 0, 0.2);
+		// background-color: var(--pure-white);
+		position: absolute;
+		height: 12%;
+		width: 10%;
+		top: 54%;
+		left: 56.4%;
+		border-radius: 40%;
+		&::before {
+			content: "";
+			// background-color: var(--pure-white);
+			background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 42%;
+			width: 100%;
+			top: 49%;
+			left: 34%;
+			border-radius: 40%;
+			transform: rotate(66deg);
+		}
+		&::after {
+			content: "";
+			// background-color: var(--pure-white);
+			background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 42%;
+			width: 100%;
+			top: 60%;
+			left: 56.4%;
+			border-radius: 40%;
+			transform: rotate(39deg);
+		}
 	}
 }
 /* 
