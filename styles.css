@@ -1093,7 +1093,6 @@ img,
 }
 .tree-two .tree__frtyfr::after {
   content: "";
-  background-color: rgba(255, 0, 0, 0.2);
   background-color: var(--tree-green);
   position: absolute;
   height: 180%;
@@ -1133,6 +1132,34 @@ img,
   left: -2%;
   transform: rotate(-52deg);
   border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+}
+.tree-two .tree__frtysx {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 6%;
+  width: 10.3%;
+  top: 70.5%;
+  left: 53.5%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+.tree-two .tree__frtysvn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 4%;
+  width: 10%;
+  top: 68.3%;
+  left: 30%;
+  border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
+}
+.tree-two .tree__frtysvn::after {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 100%;
+  width: 95%;
+  top: -85.7%;
+  left: 1%;
+  border-radius: 99vw;
 }
 
 .tree-one {
@@ -1675,7 +1702,6 @@ img,
 }
 .tree-one .tree__frtyfr::after {
   content: "";
-  background-color: rgba(255, 0, 0, 0.2);
   background-color: var(--tree-green);
   position: absolute;
   height: 180%;
@@ -1715,6 +1741,34 @@ img,
   left: -2%;
   transform: rotate(-52deg);
   border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+}
+.tree-one .tree__frtysx {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 6%;
+  width: 10.3%;
+  top: 70.5%;
+  left: 53.5%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+.tree-one .tree__frtysvn {
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 4%;
+  width: 10%;
+  top: 68.3%;
+  left: 30%;
+  border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
+}
+.tree-one .tree__frtysvn::after {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 100%;
+  width: 95%;
+  top: -85.7%;
+  left: 1%;
+  border-radius: 99vw;
 }
 
 /* 

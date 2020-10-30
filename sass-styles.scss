@@ -339,7 +339,6 @@ img {
 		border-radius: 7% 0% 0% 100% / 0% 0% 0% 34%;
 	}
 	.tree__trty {
-		// background-color: rgba(255, 0, 0, 0.2);
 		background-color: var(--pure-white);
 		position: absolute;
 		height: 17%;
@@ -424,7 +423,6 @@ img {
 	}
 	.tree__trtyeit {
 		background-color: var(--pure-white);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 9%;
 		width: 3.2%;
@@ -433,7 +431,6 @@ img {
 		border-radius: 99vw;
 		transform: rotate(46deg);
 		&::before {
-			// background: rgba(255, 0, 0, 0.2);
 			background-color: var(--pure-white);
 			content: "";
 			position: absolute;
@@ -446,7 +443,6 @@ img {
 		}
 	}
 	.tree__trtynine {
-		// background-color: rgba(255, 0, 0, 0.2);
 		background-color: var(--pure-white);
 		position: absolute;
 		height: 12%;
@@ -457,7 +453,6 @@ img {
 		&::before {
 			content: "";
 			background-color: var(--pure-white);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 42%;
 			width: 100%;
@@ -469,7 +464,6 @@ img {
 		&::after {
 			content: "";
 			background-color: var(--pure-white);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 42%;
 			width: 100%;
@@ -481,7 +475,6 @@ img {
 	}
 	.tree__frty {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 4.5%;
 		width: 5.5%;
@@ -491,7 +484,6 @@ img {
 		transform: rotate(-19deg);
 		&::before {
 			content: "";
-			// background-color: rgba(255, 0, 0, 0.2);
 			background-color: var(--tree-green);
 			position: absolute;
 			height: 120%;
@@ -503,7 +495,6 @@ img {
 		}
 		&::after {
 			content: "";
-			// background-color: rgba(255, 0, 0, 0.2);
 			background-color: var(--tree-green);
 			position: absolute;
 			height: 120%;
@@ -516,7 +507,6 @@ img {
 	}
 	.tree__frtyone {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 13%;
 		width: 22%;
@@ -527,7 +517,6 @@ img {
 		&::before {
 			content: "";
 			background-color: var(--tree-green);
-			// background-color: rgba(255, 0, 0, 0.1);
 			position: absolute;
 			height: 88%;
 			width: 35%;
@@ -539,7 +528,6 @@ img {
 	}
 	.tree__frtytwo {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 10%;
 		width: 12%;
@@ -550,7 +538,6 @@ img {
 		&::before {
 			content: "";
 			background-color: var(--tree-green);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 123%;
 			width: 100%;
@@ -562,7 +549,6 @@ img {
 		&::after {
 			content: "";
 			background-color: var(--pure-white);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 57%;
 			width: 45%;
@@ -574,7 +560,6 @@ img {
 	}
 	.tree__frtytre {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 5.5%;
 		width: 13%;
@@ -585,7 +570,6 @@ img {
 		&::after {
 			content: "";
 			background-color: var(--pure-white);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 100%;
 			width: 100%;
@@ -597,7 +581,6 @@ img {
 	}
 	.tree__frtyfr {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 7%;
 		width: 4%;
@@ -608,7 +591,6 @@ img {
 		&::before {
 			content: "";
 			background-color: var(--tree-green);
-			// background-color: rgba(255, 0, 0, 0.2);
 			position: absolute;
 			height: 93%;
 			width: 156%;
@@ -619,7 +601,6 @@ img {
 		}
 		&::after {
 			content: "";
-			background-color: rgba(255, 0, 0, 0.2);
 			background-color: var(--tree-green);
 			position: absolute;
 			height: 180%;
@@ -631,7 +612,6 @@ img {
 	}
 	.tree__frtyfiv {
 		background-color: var(--tree-green);
-		// background-color: rgba(255, 0, 0, 0.2);
 		position: absolute;
 		height: 6.5%;
 		width: 9%;
@@ -661,6 +641,36 @@ img {
 			left: -2%;
 			transform: rotate(-52deg);
 			border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+		}
+	}
+	.tree__frtysx {
+		background-color: var(--pure-white);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 6%;
+		width: 10.3%;
+		top: 70.5%;
+		left: 53.5%;
+		clip-path: polygon(50% 0, 0 100%, 100% 100%);
+	}
+	.tree__frtysvn {
+		background-color: var(--pure-white);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 4%;
+		width: 10%;
+		top: 68.3%;
+		left: 30%;
+		border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
+		&::after {
+			content: "";
+			background-color: var(--tree-green);
+			position: absolute;
+			height: 100%;
+			width: 95%;
+			top: -85.7%;
+			left: 1%;
+			border-radius: 99vw;
 		}
 	}
 }
