@@ -58,7 +58,7 @@ img,
 
 /* Green background, the most root div thats 100% of the image size */
 .background-mountains {
-  /* background-color: var(--mountain-green); */
+  background-color: var(--mountain-green);
   position: absolute;
   height: 68%;
   width: 100%;
@@ -486,7 +486,8 @@ img,
   transform: translate(-50%, -50%);
   clip-path: polygon(29.53% 42.71%, 57.81% 33.54%, 72.7% 55.89%, 31.5% 70.54%);
 }
-.sign .sign-post {
+
+.sign-post {
   background-color: var(--sign-post);
   position: absolute;
   height: 60%;
@@ -841,7 +842,7 @@ img,
   border-radius: 7% 0% 0% 100%/0% 0% 0% 34%;
 }
 .tree .tree__trty {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   position: absolute;
   height: 17%;
   width: 29%;
@@ -900,7 +901,7 @@ img,
   height: 8%;
   width: 3%;
   top: 44.5%;
-  left: 51.5%;
+  left: 51%;
   border-radius: 100%;
 }
 .tree .tree__trtysvn {
@@ -913,7 +914,7 @@ img,
   border-radius: 0% 0% 36% 0%/0% 0% 14% 0%;
 }
 .tree .tree__trtyeit {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   position: absolute;
   height: 9%;
   width: 3.2%;
@@ -923,7 +924,7 @@ img,
   transform: rotate(46deg);
 }
 .tree .tree__trtyeit::before {
-  background: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   content: "";
   position: absolute;
   top: -51%;
@@ -934,7 +935,7 @@ img,
   transform: rotate(-33deg);
 }
 .tree .tree__trtynine {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   position: absolute;
   height: 12%;
   width: 10%;
@@ -944,7 +945,7 @@ img,
 }
 .tree .tree__trtynine::before {
   content: "";
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   position: absolute;
   height: 42%;
   width: 100%;
@@ -955,7 +956,7 @@ img,
 }
 .tree .tree__trtynine::after {
   content: "";
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: var(--pure-white);
   position: absolute;
   height: 42%;
   width: 100%;
@@ -963,6 +964,112 @@ img,
   left: 56.4%;
   border-radius: 40%;
   transform: rotate(39deg);
+}
+.tree .tree__frty {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 4.5%;
+  width: 5.5%;
+  top: 61.5%;
+  left: 21.6%;
+  border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+  transform: rotate(-19deg);
+}
+.tree .tree__frty::before {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 120%;
+  width: 130%;
+  top: 35.5%;
+  left: -48.4%;
+  border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+  transform: rotate(-33deg);
+}
+.tree .tree__frty::after {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 120%;
+  width: 130%;
+  top: 85.5%;
+  left: -45.4%;
+  border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+  transform: rotate(-48deg);
+}
+.tree .tree__frtyone {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 13%;
+  width: 22%;
+  top: 61%;
+  left: 27%;
+  border-radius: 50%;
+  clip-path: inset(0% 47.3% 16.86% 0%);
+}
+.tree .tree__frtyone::before {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 88%;
+  width: 35%;
+  top: -16%;
+  left: 7%;
+  border-radius: 99vw;
+  transform: rotate(50deg);
+}
+.tree .tree__frtytwo {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 10%;
+  width: 12%;
+  top: 62%;
+  left: 38.3%;
+  border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+  transform: rotate(21deg);
+}
+.tree .tree__frtytwo::before {
+  content: "";
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 123%;
+  width: 100%;
+  top: -57%;
+  left: 32.3%;
+  border-radius: 32% 0% 0% 100%/39% 100% 0% 0%;
+  transform: rotate(-22deg);
+}
+.tree .tree__frtytwo::after {
+  content: "";
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 57%;
+  width: 45%;
+  top: -66%;
+  left: 23.3%;
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+  transform: rotate(-16deg);
+}
+.tree .tree__frtytre {
+  background-color: var(--tree-green);
+  position: absolute;
+  height: 5.5%;
+  width: 13%;
+  top: 68.3%;
+  left: 46.5%;
+  border-radius: 0% 65% 0% 100%/0% 100% 0% 0%;
+  transform: rotate(63deg);
+}
+.tree .tree__frtytre::after {
+  content: "";
+  background-color: var(--pure-white);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -117.7%;
+  left: -110.5%;
+  border-radius: 50%;
+  transform: rotate(31deg);
 }
 
 /* 
