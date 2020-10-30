@@ -590,7 +590,562 @@ img,
 	transform: translate(-50%, -50%);
 }
 
-.tree {
+.tree-two {
+	position: absolute;
+	height: 51%;
+	width: 20%;
+	top: -4.5%;
+	left: 72%;
+	clip-path: inset(9% 0% -20.55% 0%);
+	.tree__one {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 21%;
+		width: 3.5%;
+		top: 0%;
+		left: 50.3%;
+		border-radius: 49% 51% 19% 13% / 26% 25% 0% 0%;
+		transform: rotate(-4deg);
+	}
+	/* top background block */
+	.tree__two {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 19%;
+		width: 7%;
+		top: 15%;
+		left: 48.5%;
+		transform: translate(-50%, -50%);
+	}
+	.tree__three {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 28%;
+		width: 15%;
+		top: -13%;
+		left: 35.3%;
+		border-radius: 50%;
+		transform: rotate(-4deg);
+		clip-path: inset(46% 0% 0% 17%);
+	}
+	.tree__four {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 28%;
+		width: 15%;
+		top: -10%;
+		left: 55%;
+		border-radius: 50%;
+		transform: rotate(20deg);
+		clip-path: inset(60% 63% 0% 0%);
+	}
+	.tree__five {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 11%;
+		width: 8%;
+		top: 14%;
+		left: 55%;
+		border-radius: 50%;
+		transform: rotate(-36deg);
+		clip-path: inset(0% 42.33% 17.58% 0%);
+	}
+	.tree__six {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 10%;
+		width: 10%;
+		top: 10%;
+		left: 38%;
+		border-radius: 50%;
+		clip-path: inset(28.3% 0% 0% 105%);
+	}
+	.tree__seven {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 15%;
+		width: 8%;
+		top: 11%;
+		left: 33%;
+		border-radius: 50%;
+		clip-path: inset(0% 0% 59.99% 32.3%);
+		transform: rotate(62deg);
+	}
+	.tree__eight {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 10%;
+		width: 10%;
+		top: 10%;
+		left: 38%;
+		border-radius: 50%;
+		clip-path: inset(66.6% 0% 0% 28.8%);
+	}
+	.tree__nine {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 7%;
+		width: 8%;
+		top: 16%;
+		left: 53%;
+		border-radius: 50%;
+		clip-path: inset(39.16% 36% 0% 0%);
+		transform: rotate(0deg);
+	}
+	.tree__ten {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 15%;
+		width: 10%;
+		top: 12%;
+		left: 53%;
+		border-radius: 50%;
+		clip-path: inset(23.82% 26.25% 0% 0%);
+		transform: rotate(-14deg);
+	}
+	.tree__elvn {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 15%;
+		width: 10%;
+		top: 11.5%;
+		left: 50%;
+		border-radius: 50%;
+		clip-path: inset(55.82% 37.25% 0% 0%);
+		transform: rotate(-14deg);
+	}
+	.tree__twlv {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 12%;
+		width: 6.2%;
+		top: 18.5%;
+		left: 47.5%;
+		border-radius: 50%;
+		clip-path: inset(30% 0% 0% 0%);
+	}
+	.tree__trtn {
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 12%;
+		width: 4%;
+		top: 26.7%;
+		left: 48.4%;
+		border-radius: 50%;
+		clip-path: inset(0% 0% 65% 0%);
+	}
+	.tree__frtn {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 21%;
+		width: 27%;
+		top: 14%;
+		left: 40%;
+		clip-path: polygon(
+			54% 30%,
+			23% 63%,
+			15% 69%,
+			16% 64%,
+			10% 69%,
+			11% 61%,
+			3.22% 73.05%,
+			5% 57%,
+			-2px 56.31%,
+			30.78% 13.68%
+		);
+	}
+	.tree__sxtn {
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 10%;
+		width: 12%;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 79% 30% 19% 13% / 55% 25% 0% 0%;
+	}
+	.tree__svtn {
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 10.5%;
+		width: 26.3%;
+		top: 29.3%;
+		left: 37.4%;
+		transform: rotate(-3deg);
+		border-radius: 66% 0% 54% 11% / 81% 25% 49% 10%;
+	}
+	.tree__eitn {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 12%;
+		width: 20%;
+		top: 23%;
+		left: 55.8%;
+		border-radius: 50%;
+		clip-path: inset(31% 54% 0% 0%);
+	}
+	.tree__nintn {
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 11%;
+		width: 8%;
+		top: 34%;
+		left: 45%;
+		border-radius: 50%;
+		transform: rotate(8deg);
+	}
+	.tree__twty {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 11%;
+		width: 4%;
+		top: 40%;
+		left: 47.1%;
+		border-radius: 50%;
+		clip-path: inset(0% 0% 46.15% 0%);
+	}
+	.tree__twtyone {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 12%;
+		width: 6.2%;
+		top: 34.7%;
+		left: 53%;
+		border-radius: 50%;
+		clip-path: inset(0% 0% 48.02% 0%);
+	}
+	.tree__twtytw {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 16%;
+		width: 11%;
+		top: 36%;
+		left: 34.5%;
+		border-radius: 76% 15% 54% 27% / 81% 23% 49% 10%;
+		clip-path: inset(0% 0% 55.27% 0%);
+	}
+	.tree__twtytre {
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 5.1%;
+		width: 2.5%;
+		top: 34%;
+		left: 53%;
+		border-radius: 50%;
+	}
+	.tree__twtyfr {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 7%;
+		width: 7%;
+		top: 37.8%;
+		left: 59%;
+		border-radius: 0% 71% 13% 87% / 37% 31% 0% 33%;
+	}
+	.tree__twtyfiv {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 6%;
+		width: 6%;
+		top: 38.8%;
+		left: 60%;
+		border-radius: 0% 100% 3% 100% / 0% 100% 0% 100%;
+	}
+	.tree__twtysix {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 5%;
+		width: 5.5%;
+		top: 40.5%;
+		left: 61%;
+		border-radius: 0% 41% 0% 53% / 0% 47% 0% 42%;
+	}
+	.tree__twtysvn {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 2.5%;
+		width: 3.2%;
+		top: 40.5%;
+		left: 54%;
+		border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
+	}
+	.tree__twtyeit {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 2.5%;
+		width: 3.5%;
+		top: 41.4%;
+		left: 54.4%;
+		border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
+	}
+	.tree__twtynin {
+		background-color: var(--mountain-green);
+		position: absolute;
+		height: 7%;
+		width: 6%;
+		top: 40%;
+		left: 57%;
+		border-radius: 7% 0% 0% 100% / 0% 0% 0% 34%;
+	}
+	.tree__trty {
+		// background-color: rgba(255, 0, 0, 0.2);
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 17%;
+		width: 29%;
+		top: 47%;
+		left: 32%;
+		border-radius: 53% 23% 26% 0%/75% 21% 0% 0%;
+	}
+	.tree__trtyone {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 6%;
+		width: 8%;
+		top: 45.8%;
+		left: 42%;
+		border-radius: 50%;
+	}
+	.tree__trtytw {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 26%;
+		width: 39.5%;
+		top: 34%;
+		left: 25.3%;
+		clip-path: polygon(
+			54% 30%,
+			58.23% 43.95%,
+			25.94% 62.19%,
+			37.87% 42.24%,
+			39.16% 41.79%,
+			20.72% 46.03%,
+			9.86% 51.68%,
+			20.79% 33.88%,
+			15px 30.79%,
+			38.72% 12%
+		);
+	}
+	.tree__trtytr {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 6%;
+		width: 9%;
+		top: 42.5%;
+		left: 32%;
+		border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+	}
+	.tree__trtyfr {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 6%;
+		width: 5%;
+		top: 44.5%;
+		left: 39%;
+		border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+	}
+	.tree__trtyfiv {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 10%;
+		width: 3%;
+		top: 44.5%;
+		left: 48.6%;
+		border-radius: 100%;
+	}
+	.tree__trtysx {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 8%;
+		width: 3%;
+		top: 44.5%;
+		left: 51%;
+		border-radius: 100%;
+	}
+	.tree__trtysvn {
+		background-color: var(--tree-green);
+		position: absolute;
+		height: 11%;
+		width: 21%;
+		top: 37.5%;
+		left: 40.5%;
+		border-radius: 0% 0% 36% 0% / 0% 0% 14% 0%;
+	}
+	.tree__trtyeit {
+		background-color: var(--pure-white);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 9%;
+		width: 3.2%;
+		top: 56%;
+		left: 29.4%;
+		border-radius: 99vw;
+		transform: rotate(46deg);
+		&::before {
+			// background: rgba(255, 0, 0, 0.2);
+			background-color: var(--pure-white);
+			content: "";
+			position: absolute;
+			top: -51%;
+			left: 132%;
+			height: 118%;
+			width: 229%;
+			border-radius: 50%;
+			transform: rotate(-33deg);
+		}
+	}
+	.tree__trtynine {
+		// background-color: rgba(255, 0, 0, 0.2);
+		background-color: var(--pure-white);
+		position: absolute;
+		height: 12%;
+		width: 10%;
+		top: 54%;
+		left: 56.4%;
+		border-radius: 40%;
+		&::before {
+			content: "";
+			background-color: var(--pure-white);
+			// background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 42%;
+			width: 100%;
+			top: 49%;
+			left: 34%;
+			border-radius: 40%;
+			transform: rotate(66deg);
+		}
+		&::after {
+			content: "";
+			background-color: var(--pure-white);
+			// background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 42%;
+			width: 100%;
+			top: 60%;
+			left: 56.4%;
+			border-radius: 40%;
+			transform: rotate(39deg);
+		}
+	}
+	.tree__frty {
+		background-color: var(--tree-green);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 4.5%;
+		width: 5.5%;
+		top: 61.5%;
+		left: 21.6%;
+		border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+		transform: rotate(-19deg);
+		&::before {
+			content: "";
+			// background-color: rgba(255, 0, 0, 0.2);
+			background-color: var(--tree-green);
+			position: absolute;
+			height: 120%;
+			width: 130%;
+			top: 35.5%;
+			left: -48.4%;
+			border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+			transform: rotate(-33deg);
+		}
+		&::after {
+			content: "";
+			// background-color: rgba(255, 0, 0, 0.2);
+			background-color: var(--tree-green);
+			position: absolute;
+			height: 120%;
+			width: 130%;
+			top: 85.5%;
+			left: -45.4%;
+			border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+			transform: rotate(-48deg);
+		}
+	}
+	.tree__frtyone {
+		background-color: var(--tree-green);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 13%;
+		width: 22%;
+		top: 61%;
+		left: 27%;
+		border-radius: 50%;
+		clip-path: inset(0% 47.3% 16.86% 0%);
+		&::before {
+			content: "";
+			background-color: var(--tree-green);
+			// background-color: rgba(255, 0, 0, 0.1);
+			position: absolute;
+			height: 88%;
+			width: 35%;
+			top: -16%;
+			left: 7%;
+			border-radius: 99vw;
+			transform: rotate(50deg);
+		}
+	}
+	.tree__frtytwo {
+		background-color: var(--tree-green);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 10%;
+		width: 12%;
+		top: 62%;
+		left: 38.3%;
+		border-radius: 0% 100% 0% 100%/0% 100% 0% 100%;
+		transform: rotate(21deg);
+		&::before {
+			content: "";
+			background-color: var(--tree-green);
+			// background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 123%;
+			width: 100%;
+			top: -57%;
+			left: 32.3%;
+			border-radius: 32% 0% 0% 100%/39% 100% 0% 0%;
+			transform: rotate(-22deg);
+		}
+		&::after {
+			content: "";
+			background-color: var(--pure-white);
+			// background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 57%;
+			width: 45%;
+			top: -66%;
+			left: 23.3%;
+			clip-path: polygon(49% 100%, 0 0, 100% 0);
+			transform: rotate(-16deg);
+		}
+	}
+	.tree__frtytre {
+		background-color: var(--tree-green);
+		// background-color: rgba(255, 0, 0, 0.2);
+		position: absolute;
+		height: 5.5%;
+		width: 13%;
+		top: 68.3%;
+		left: 46.5%;
+		border-radius: 0% 65% 0% 100%/0% 100% 0% 0%;
+		transform: rotate(63deg);
+		&::after {
+			content: "";
+			background-color: var(--pure-white);
+			// background-color: rgba(255, 0, 0, 0.2);
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: -117.7%;
+			left: -110.5%;
+			border-radius: 50%;
+			transform: rotate(31deg);
+		}
+	}
+}
+.tree-one {
 	position: absolute;
 	height: 41%;
 	width: 17%;
